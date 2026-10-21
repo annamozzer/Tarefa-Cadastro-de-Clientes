@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* dimensões */
+    min-height: 100vh;
+
+    /* estilização */
+    background-color: #ADCEE5;
+    display: grid;
+    grid-template-columns: minmax(0, 500px);
+    align-content: start;
+    justify-content: center;
+    gap: 24px;
+    padding: 40px 20px;
+
+    /* tipografia */
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1E1A1A;
+}
+
+main,
+.list {
+    /* estilização */
+    background-color: #F1EEED;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.headers {
+    /* estilização */
+    background-color: #E4EBF0;
+    border-left: 4px solid #2B6CB0;
+    border-radius: 8px;
+    padding: 10px 8px;
+    margin-bottom: 24px;
+
+    /* tipografia */
+    text-align: center;
+    color: #2B6CB0;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+form {
+    /* estilização */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    /* dimensões */
+    width: 100%;
+
+    /* estilização */
+    padding: 10px 12px;
+    border: 1px solid #B7C2CB;
+    border-radius: 8px;
+
+    /* tipografia */
+    font-size: 16px;
+}
+
+input:focus {
+    /* estilização */
+    outline: none;
+    border-color: #4B84C2;
+}
+
+button {
+    /* estilização */
+    background-color: #2B6CB0;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 2px;
+    cursor: pointer;
+
+    /* tipografia */
+    color: #ffffff;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1F4F8A;
+}
+
+ul {
+    /* estilização */
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+li {
+    /* estilização */
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #DFE7EE;
+}
+
+li button {
+    /* estilização */
+    background-color: #D9534F;
+    padding: 6px 10px;
+
+    /* tipografia */
+    font-size: 14px;
+}
+
+li button:hover {
+    background-color: #B52B27;
+}
